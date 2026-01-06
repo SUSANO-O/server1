@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
       status: 'Conectado',
       node_version: process.version,
       db_version: resDb.rows[0].version,
-      data: 'Hello World',
+      data: 'Hello World espere y vea como funciona',
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
